@@ -29,16 +29,15 @@ Os **Requisitos Funcionais (RF)** descrevem o que o sistema deve fazer.
 
 | ID    | Descrição do Requisito | Prioridade |
 |-------|------------------------|------------|
-| RF-01 | O sistema deve permitir que o usuário realize cadastro informando dados básicos (ex: nome, e-mail e senha). | 🔴 ALTA |
-| RF-02 | O sistema deve validar se todos os campos obrigatórios do cadastro foram preenchidos corretamente antes de enviar. | 🔴 ALTA  |
-| RF-03 | O sistema deve validar se o e-mail informado possui um formato válido. | 🔴 ALTA |
-| RF-04 | O sistema deve permitir que o usuário se cadastre/autentique utilizando uma conta Google. | 🔴 ALTA |
-| RF-05 | O sistema deve armazenar os dados do usuário no banco de dados após cadastro bem-sucedido. | 🔴 ALTA |
-| RF-06 | O sistema não deve permitir cadastro de usuários com e-mails já existentes. | 🔴 ALTA |
-| RF-07 | (Descreva aqui o requisito funcional 7 do seu sistema) | 🟡 MÉDIA |
-| RF-08 | (Descreva aqui o requisito funcional 8 do seu sistema) | (Alta/Média/Baixa) |
-| RF-09 | (Descreva aqui o requisito funcional 9 do seu sistema) | (Alta/Média/Baixa) |
-| RF-10 | (Descreva aqui o requisito funcional 10 do seu sistema) | (Alta/Média/Baixa) |
+| RF-01 | O sistema deve autenticar e redirecionar o usuário após login bem-sucedido com Google. | 🔴 ALTA |
+| RF-02 | O sistema deve informar ao usuário se o login foi realizado com sucesso ou se ocorreu erro. | 🔴 ALTA  |
+| RF-03 | O sistema deve permitir que o usuário se cadastre/autentique utilizando uma conta Google. | 🔴 ALTA |
+| RF-04 | O sistema deve armazenar os dados do usuário no banco de dados após cadastro bem-sucedido. | 🔴 ALTA |
+| RF-05 | O sistema não deve permitir cadastro de usuários com e-mails já existentes. | 🔴 ALTA |
+| RF-06 | (Descreva aqui o requisito funcional 7 do seu sistema) | 🟡 MÉDIA |
+| RF-07 | (Descreva aqui o requisito funcional 8 do seu sistema) | (Alta/Média/Baixa) |
+| RF-08 | (Descreva aqui o requisito funcional 9 do seu sistema) | (Alta/Média/Baixa) |
+| RF-09 | (Descreva aqui o requisito funcional 10 do seu sistema) | (Alta/Média/Baixa) |
 
 ---
 
@@ -51,27 +50,27 @@ Os **Requisitos Funcionais (RF)** descrevem o que o sistema deve fazer.
 ---
 ## Cadastro
 
-### História 1 (relacionada ao RF-01)
-
-Como usuário novo,  
-Eu quero me cadastrar no sistema informando meus dados básicos, 
-Para que poder acessar a aplicação e gerenciar minhas compras.
-
----
-
-### História 2 (relacionada ao RF-02 e RF-03)
-
-Como usuário,  
-Eu quero que o sistema valide os dados que eu informo no cadastro,  
-Para que garantir que minhas informações estejam corretas e evitar erros no acesso.
-
----
-
-### História 3 (relacionada ao RF-04)
+### História 1 (relacionada ao RF-03)
 
 Como usuário,  
 Eu quero me cadastrar ou entrar utilizando minha conta Google,  
 Para que acessar o sistema de forma mais rápida e prática, sem precisar criar uma nova senha.
+
+---
+
+### História 2 (relacionada ao RF-02)
+
+Como usuário,  
+quero receber uma mensagem informando se meu login foi realizado com sucesso ou se ocorreu erro,  
+para entender o que aconteceu durante o acesso ao sistema.
+
+---
+
+### História 3 (relacionada ao RF-04 e RF-05)
+
+Como usuário,  
+quero que meus dados sejam armazenados corretamente e não duplicados,  
+para manter meu histórico e evitar problemas com múltiplas contas.
 
 ---
 
@@ -97,8 +96,8 @@ Eles garantem a qualidade da solução.
 
 | ID     | Descrição do Requisito | Prioridade |
 |--------|------------------------|------------|
-| RNF-01 | O sistema deve responder às requisições de cadastro em até 3 segundos. | 🔴 ALTA |
-| RNF-02 | As senhas dos usuários devem ser armazenadas de forma criptografada. | 🔴 ALTA |
+| RNF-01 | O sistema deve responder às requisições de cadastro em até 5 segundos. | 🔴 ALTA |
+| RNF-02 |Os dados sensíveis do usuário devem ser armazenados de forma segura, seguindo boas práticas de proteção de dados. | 🔴 ALTA |
 | RNF-03 | O sistema deve estar disponível para cadastro 24/7, salvo manutenções programadas. | 🟡 MÉDIA |
 | RNF-04 | O sistema deve funcionar em navegadores modernos (Chrome, Edge, etc.). | 🟡 MÉDIA |
 | RNF-05 | O sistema deve suportar múltiplos usuários realizando cadastro simultaneamente. | 🟡 MÉDIA |
